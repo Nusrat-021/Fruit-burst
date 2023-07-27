@@ -52,18 +52,18 @@
   </head>
   <body class="font-open-sans">
     <!-- header section -->
-    <header class="max-w-[1440px] mx-auto px-5 xl:px-0">
+    <header class="max-w-[1440px] mx-auto px-5 2xl:px-0">
       <!-- navbar section -->
       <nav>
         <div
           class="flex items-center justify-between flex-row-reverse lg:flex-row md:bg-primary-color rounded-full md:my-12 md:px-12 md:py-6 lg:py-8"
         >
-          <div
-            class="flex justify-between text-secondary-color lg:text-white"
-          >
+          <div class="flex justify-between text-secondary-color lg:text-white">
             <div class="dropdown dropdown-end">
               <label tabindex="0" class="lg:hidden cursor-pointer">
-                <i class="fa-solid fa-bars text-secondary-color text-xl md:text-white"></i>
+                <i
+                  class="fa-solid fa-bars text-secondary-color text-xl md:text-white"
+                ></i>
               </label>
               <ul
                 tabindex="0"
@@ -110,10 +110,13 @@
               href="./index.html"
               class="btn btn-link p-0 no-underline hover:no-underline text-secondary-color md:text-white normal-case text-xl md:text-4xl font-bold"
               ><img class="w-7 lg:w-12" src="./images/logo.png" alt="" /> Fruit
-              Burst</a>
+              Burst</a
+            >
           </div>
-          <div class=" hidden lg:flex lg:order-1 text-white ">
-            <ul class="flex items-center space-x-5 px-1 text-base font-medium cursor-pointer">
+          <div class="hidden lg:flex lg:order-1 text-white">
+            <ul
+              class="flex items-center space-x-5 px-1 text-base font-medium cursor-pointer"
+            >
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
@@ -127,7 +130,9 @@
                 class="w-full ps-6 pe-8 text-secondary-color rounded-full input placeholder:text-secondary-color/40"
                 placeholder="Search here"
               />
-              <div class="absolute top-0 bottom-0 right-0 flex items-center pe-3 text-secondary-color">
+              <div
+                class="absolute top-0 bottom-0 right-0 flex items-center pe-3 text-secondary-color"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -147,8 +152,163 @@
           </div>
         </div>
       </nav>
-    </header>
 
+      <!-- banner section -->
+      <div class="carousel w-full h-44 md:h-auto rounded-lg">
+        <!-- slider 1 -->
+        <div id="slide1" class="carousel-item relative w-full h-full">
+          <div class="relative">
+            <img src="/images/banner1.png" class="w-full object-cover h-full" />
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-secondary-color to-secondary-color/20"
+            ></div>
+          </div>
+                      
+          <div class="absolute px-2 md:px-0 pt-2 md:pt-0 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2  text-white text-center space-y-2 md:space-y-4 lg:space-y-7">
+            <h1 class="text-xl md:text-3xl lg:text-6xl font-extrabold text-center">
+              Exotic tastes at your doorstep
+            </h1>
+            <p class="text-sm lg:text-xl font-medium text-center">
+              We supply highly quality organic products
+            </p>
+            <button
+              class="font-semibold lg:font-extrabold text-lg lg:text-xl px-4 lg:px-7 py-2 lg:py-5 bg-primary-color rounded-lg"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2"
+          >
+            <a
+            href="#slide4"
+              class="btn btn-circle min-h-0 w-6 h-6 md:w-12 md:h-12 bg-secondary-color text-white border-0 hover:bg-secondary-color"
+              >❮</a
+            >
+            <a
+              href="#slide2"
+              class="btn btn-circle min-h-0 w-6 h-6 md:w-12 md:h-12 bg-secondary-color text-white border-0 hover:bg-secondary-color"
+              >❯</a>    
+          </div>
+
+          
+        </div>
+        <!-- slider 2 -->
+        <div id="slide2" class="carousel-item relative w-full h-full">
+          <div class="relative">
+            <img src="/images/banner2.png" class="w-full object-cover h-full" />
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-secondary-color to-secondary-color/20"
+            ></div>
+          </div>
+                      
+          <div class="absolute px-2 md:px-0 pt-2 md:pt-0 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2  text-white text-center space-y-2 md:space-y-4 lg:space-y-7">
+            <h1 class="text-xl md:text-3xl lg:text-6xl font-extrabold text-center">
+              Exotic tastes at your doorstep
+            </h1>
+            <p class="text-sm lg:text-xl font-medium text-center">
+              We supply highly quality organic products
+            </p>
+            <button
+              class="font-semibold lg:font-extrabold text-lg lg:text-xl px-4 lg:px-7 py-2 lg:py-5 bg-primary-color rounded-lg"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2"
+          >
+            <a
+              href="#slide1"
+              class="btn btn-circle min-h-0 w-6 h-6 md:w-12 md:h-12 bg-secondary-color text-white border-0 hover:bg-secondary-color"
+              >❮</a
+            >
+            <a
+              href="#slide3"
+              class="btn btn-circle min-h-0 w-6 h-6 md:w-12 md:h-12 bg-secondary-color text-white border-0 hover:bg-secondary-color"
+              >❯</a>    
+          </div>
+
+          
+        </div>
+        <!-- slider 3 -->
+        <div id="slide3" class="carousel-item relative w-full h-full">
+          <div class="relative">
+            <img src="/images/banner3.png" class="w-full object-cover h-full" />
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-secondary-color to-secondary-color/20"
+            ></div>
+          </div>
+                      
+          <div class="absolute px-2 md:px-0 pt-2 md:pt-0 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2  text-white text-center space-y-2 md:space-y-4 lg:space-y-7">
+            <h1 class="text-xl md:text-3xl lg:text-6xl font-extrabold text-center">
+              Exotic tastes at your doorstep
+            </h1>
+            <p class="text-sm lg:text-xl font-medium text-center">
+              We supply highly quality organic products
+            </p>
+            <button
+              class="font-semibold lg:font-extrabold text-lg lg:text-xl px-4 lg:px-7 py-2 lg:py-5 bg-primary-color rounded-lg"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2"
+          >
+            <a
+              href="#slide2"
+              class="btn btn-circle min-h-0 w-6 h-6 md:w-12 md:h-12 bg-secondary-color text-white border-0 hover:bg-secondary-color"
+              >❮</a
+            >
+            <a
+              href="#slide4"
+              class="btn btn-circle min-h-0 w-6 h-6 md:w-12 md:h-12 bg-secondary-color text-white border-0 hover:bg-secondary-color"
+              >❯</a>    
+          </div>
+
+          
+        </div>
+        <!-- slider 4 -->
+        <div id="slide4" class="carousel-item relative w-full h-full">
+          <div class="relative">
+            <img src="/images/banner4.png" class="w-full object-cover h-full" />
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-secondary-color to-secondary-color/20"
+            ></div>
+          </div>
+                      
+          <div class="absolute px-2 md:px-0 pt-2 md:pt-0 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2  text-white text-center space-y-2 md:space-y-4 lg:space-y-7">
+            <h1 class="text-xl md:text-3xl lg:text-6xl font-extrabold text-center">
+              Exotic tastes at your doorstep
+            </h1>
+            <p class="text-sm lg:text-xl font-medium text-center">
+              We supply highly quality organic products
+            </p>
+            <button
+              class="font-semibold lg:font-extrabold text-lg lg:text-xl px-4 lg:px-7 py-2 lg:py-5 bg-primary-color rounded-lg"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-1 md:left-5 right-1 md:right-5 top-1/2"
+          >
+            <a
+              href="#slide3"
+              class="btn btn-circle min-h-0 w-6 h-6 md:w-12 md:h-12 bg-secondary-color text-white border-0 hover:bg-secondary-color"
+              >❮</a
+            >
+            <a
+              href="#slide1"
+              class="btn btn-circle min-h-0 w-6 h-6 md:w-12 md:h-12 bg-secondary-color text-white border-0 hover:bg-secondary-color"
+              >❯</a>    
+          </div>
+
+          
+        </div>
+      </div>
+    </header>
     <!-- main section -->
     <main></main>
 
