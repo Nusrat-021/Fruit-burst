@@ -4,17 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <!-- daisy UI cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
       rel="stylesheet"
-      type="text/css"/>
+      type="text/css"
+    />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind custom style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-color': '#F85559',
+              'secondary-color':'#121212'
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- custom css -->
+    <style>
+      .font-open-sans {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="font-open-sans">
     <!-- header section -->
-    <header></header>
+    <header class="max-w-[1440px] mx-auto">
+      <!-- navbar section -->
+      <nav class="text-white">
+        <div class="navbar bg-primary-color rounded-full my-12  px-12 py-8 justify-between">
+          <div class="order-2">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-link no-underline hover:no-underline text-white normal-case text-4xl"><img class="w-12" src="./images/logo.png" alt=""> Fruit Burst</a>
+          </div>
+          <div class=" hidden lg:flex order-1">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="order-3">
+            <div class="relative w-[400px]">
+              <input
+                type="text"
+                class="w-full ps-6 pe-8 text-secondary-color rounded-full input placeholder:text-secondary-color/40"
+                placeholder="Search here"
+              />
+              <div class="absolute top-0 bottom-0 right-0 flex items-center pe-3 text-secondary-color">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- main section -->
     <main></main>
