@@ -23,18 +23,24 @@
       rel="stylesheet"
     />
 
+    <!-- font awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/3c6199570c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- tailwind custom style -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              'primary-color': '#F85559',
-              'secondary-color':'#121212'
-            }
-          }
-        }
-      }
+              "primary-color": "#F85559",
+              "secondary-color": "#121212",
+            },
+          },
+        },
+      };
     </script>
 
     <!-- custom css -->
@@ -46,27 +52,18 @@
   </head>
   <body class="font-open-sans">
     <!-- header section -->
-    <header class="max-w-[1440px] mx-auto">
+    <header class="max-w-[1440px] mx-auto px-5 xl:px-0">
       <!-- navbar section -->
-      <nav class="text-white">
-        <div class="navbar bg-primary-color rounded-full my-12  px-12 py-8 justify-between">
-          <div class="order-2">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+      <nav>
+        <div
+          class="flex items-center justify-between flex-row-reverse lg:flex-row md:bg-primary-color rounded-full md:my-12 md:px-12 md:py-6 lg:py-8"
+        >
+          <div
+            class="flex justify-between text-secondary-color lg:text-white"
+          >
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="lg:hidden cursor-pointer">
+                <i class="fa-solid fa-bars text-secondary-color text-xl md:text-white"></i>
               </label>
               <ul
                 tabindex="0"
@@ -76,20 +73,55 @@
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
                 <li><a>All Fruits</a></li>
+                <li>
+                  <div class="hover:bg-white">
+                    <div class="relative">
+                      <input
+                        type="text"
+                        class="w-full ps-6 pe-8 text-secondary-color rounded-full input placeholder:text-secondary-color/40 border border-secondary-color/50"
+                        placeholder="Search here"
+                      />
+                      <div
+                        class="absolute top-0 bottom-0 right-0 flex items-center pe-3 text-secondary-color"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
-            <a class="btn btn-link no-underline hover:no-underline text-white normal-case text-4xl"><img class="w-12" src="./images/logo.png" alt=""> Fruit Burst</a>
           </div>
-          <div class=" hidden lg:flex order-1">
-            <ul class="menu menu-horizontal px-1">
+          <div class="flex order-2">
+            <a
+              href="./index.html"
+              class="btn btn-link p-0 no-underline hover:no-underline text-secondary-color md:text-white normal-case text-xl md:text-4xl font-bold"
+              ><img class="w-7 lg:w-12" src="./images/logo.png" alt="" /> Fruit
+              Burst</a>
+          </div>
+          <div class=" hidden lg:flex lg:order-1 text-white ">
+            <ul class="flex items-center space-x-5 px-1 text-base font-medium cursor-pointer">
               <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
             </ul>
           </div>
-          <div class="order-3">
-            <div class="relative w-[400px]">
+          <div class="hidden lg:flex lg:order-3">
+            <div class="relative xl:w-[400px]">
               <input
                 type="text"
                 class="w-full ps-6 pe-8 text-secondary-color rounded-full input placeholder:text-secondary-color/40"
